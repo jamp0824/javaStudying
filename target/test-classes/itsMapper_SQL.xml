@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybats-3-mapper.dtd"> -->
+
+<mapper namespace = "com.kt.its.dao.ItsDAO">
+
+
+
+	<insert id = "insertXmlToIts" parameterType = "java.util.map">
+		INSERT INTO 
+		<foreach collection = "fList" item ="ItsVO">
+			mgtmgr.tb_outconst_its
+			(
+				  type
+				, eventid
+				,event type
+				, coordx
+				, coordy
+				, laneblocktype
+				, laneblocked
+				, eventendday
+				, eventstarttime
+				, eventendtime
+				, eventstatusmsg
+				, expectedcnt
+				, expecteddetourmsg
+				, eventdirection
+			)VALUES(
+				  #{ItsVO.type}
+				, eventid
+				,event type
+				, coordx
+				, coordy
+				, laneblocktype
+				, laneblocked
+				, eventendday
+				, eventstarttime
+				, eventendtime
+				, eventstatusmsg
+				, expectedcnt
+				, expecteddetourmsg
+				, eventdirection
+			
+			)
+		</foreach>
+	</insert>
+</mapper>

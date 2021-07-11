@@ -6,10 +6,10 @@ public class CryptoApp {
 		
 		String data = "Hello world";
 		String enc = new String(crypto.encrypt(data.getBytes()));
-		String dec = new String(crypto.decrypt(data.getBytes()));
+		String dec = new String(crypto.decrypt(enc.getBytes()));
 		
-		System.out.println("Original"+data);
-		System.out.println("Encrypted"+enc);
-		System.out.println("Decrypted"+dec);
+		System.out.println("Original : "+data);
+		System.out.println("Encrypted : "+enc);
+		System.out.println("Decrypted: "+dec);
 	}
 }

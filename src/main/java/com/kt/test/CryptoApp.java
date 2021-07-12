@@ -16,13 +16,13 @@ public class CryptoApp {
 		System.out.println("Decrypted: "+dec);
 		
 		//C:\Users\junee\workspace\TestProject
-		byte[] data1 = Files.readAllBytes(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data1.txt"));
+		byte[] data1 = Files.readAllBytes(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data1"));
 		byte[] data2 = crypto.encrypt(data1);
 		byte[] data3 = crypto.decrypt(data2);
 		
-		System.out.println("data1"+System.getProperty("user.dir"));
-		Files.write(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data2.txt"),data2);
-		Files.write(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data3.txt"),data3);
+		System.out.println("data1"+data1.toString());
+		Files.write(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data2"),data2);
+		Files.write(Paths.get(System.getProperty("user.dir")+"\\src\\main\\java\\com\\kt\\test\\data3"),data3);
 		
 	}
 }

@@ -9,7 +9,7 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 
-public class jsonStringToMap {
+public class JsonStringToMap {
 	public static void main(String[] args) { 
 		try { 
 			System.out.println("-------------------JSON String 을 MAP 으로 변환-----------------------"); 

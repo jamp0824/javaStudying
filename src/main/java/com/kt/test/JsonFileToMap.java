@@ -20,7 +20,8 @@ public class JsonFileToMap {
 			Map<String, Object> map = mapper.readValue(new File("c:\\Users\\junee\\user.json"), 
 					new TypeReference<Map<String, Object>>() {}); 
 			
-			System.out.println(map.get("name")); System.out.println(map.get("age")); 
+			System.out.println(map.get("name")); 
+			System.out.println(map.get("age")); 
 			System.out.println(map.get("messages")); 
 			
 			ArrayList<String> list = (ArrayList<String>) map.get("messages"); 

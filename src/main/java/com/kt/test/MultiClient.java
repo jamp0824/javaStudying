@@ -33,6 +33,7 @@ public class MultiClient implements ActionListener {
       login1 = new JFrame("Login");
       JProgressBar progressBar = new JProgressBar();
       progressBar.setStringPainted(true);
+      // true로 설정하면 현재 진행상황을 %로 표시함.
       progressBar.setIndeterminate(true);
       progressBar.setBounds(32, 303, 195, 14);
       

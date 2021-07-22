@@ -12,7 +12,7 @@ import org.codehaus.jackson.type.TypeReference;
 public class JsonStringToMap {
 	public static void main(String[] args) { 
 		try { 
-			System.out.println("-------------------JSON String ì„ MAP ìœ¼ë¡œ ë³€í™˜-----------------------"); 
+			System.out.println("-------------------JSON String ?„ MAP ?œ¼ë¡? ë³??™˜-----------------------"); 
 			ObjectMapper mapper = new ObjectMapper(); 
 			
 			String json = "{ \"name\" : \"mkgil\" , \"age\" : 25 }"; 

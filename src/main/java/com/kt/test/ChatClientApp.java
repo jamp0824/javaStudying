@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class ChatClientApp {
-	private static final String SERVER_IP = "192.168.219.107";
+	private static final String SERVER_IP = "172.30.1.39";
 	private static final int SERVER_PORT = 5000;
 	
 	public static void main(String[] args) {
